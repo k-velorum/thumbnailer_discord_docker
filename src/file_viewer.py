@@ -82,6 +82,9 @@ class FileViewer(commands.Cog):
                     image.save(fileio, format="jpeg")
                     fileio.seek(0)
                     files.append(discord.File(fileio, filename="image.jpg"))
+                    if count == 1:
+                        await message.reply("", file=discord.File(fileio, filename="image.jpg"))
+                        fileio.seek(0)
                     count += 1
                 await thread.send(
                     content=f"{count-len(files)}~{count-1}ページ", files=files
