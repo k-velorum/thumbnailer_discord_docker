@@ -6,3 +6,8 @@ services:
       - DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN}
     volumes:
       - ./src:/app
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
