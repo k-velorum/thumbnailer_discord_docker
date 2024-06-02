@@ -16,4 +16,12 @@
 0. DiscordのBotを作成し、トークンを取得する。
 1. `token_install.sh`を実行し、取得したトークンを入力する。Windows環境の場合は`.env`を作成し、`DISCORD_TOKEN=[INPUT_YOUR_TOKEN_HERE]`のような内容で取得したトークンを記述する。
 2. `docker compose up -d`を実行する。
-3. お好きなサーバにBOTを招待する。 
+3. お好きなサーバーにBOTを招待する。
+
+## その他
+### Discord BOTの必要権限
+- Read Message History
+- Send Messages
+- Create Public Threads
+- Send Messages in Threads
+- Attach Files
