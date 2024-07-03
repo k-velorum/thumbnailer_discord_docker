@@ -1,7 +1,7 @@
 version: '3'
 services:
   discord_bot:
-    build: .
+    image: ghcr.io/k-velorum/thumbnailer_discord_docker:latest
     environment:
       - DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN}
     volumes:
